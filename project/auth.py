@@ -6,12 +6,12 @@ auth = flask.Blueprint("auth", __name__)
 
 @auth.route("/login")
 def login():
-    return "Login"
+    return flask.render_template("login.html")
 
 
 @auth.route("/signup")
 def signup():
-    return "Signup"
+    return flask.render_template("signup.html")
 
 
 @auth.route("/logout")

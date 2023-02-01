@@ -6,9 +6,9 @@ main = flask.Blueprint("main", __name__)
 
 @main.route("/")
 def index():
-    return "Index"
+    return flask.render_template("index.html")
 
 
 @main.route("/profile")
 def profile():
-    return "Profile"
+    return flask.render_template("profile.html")
