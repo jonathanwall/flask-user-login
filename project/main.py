@@ -1,0 +1,14 @@
+import flask
+from . import db
+
+main = flask.Blueprint("main", __name__)
+
+
+@main.route("/")
+def index():
+    return "Index"
+
+
+@main.route("/profile")
+def profile():
+    return "Profile"
